@@ -9,7 +9,7 @@ def ScrapEmpresasElEconomista(arTr):
     
     arResult = list()
     dCompany = {}
-    print(arTr)
+
     for iCountCompanies,bsTr in enumerate(arTr,1):
         name = bsTr.find(class_='tal').find_all('a')[0].contents[0]
         link = bsTr.find(class_='tal').find_all('a')[0].get('href')
@@ -47,7 +47,7 @@ def ScrapEmpresasElEconomista(arTr):
             dCompany["tel"]=strCompanyTel
             dCompany["tel_2"]=strCompanyTel_2
             dCompany["site"]=strCompanySite
-            print(dCompany)
+            
             arResult.append(dCompany)
             break
 
@@ -57,11 +57,26 @@ def ScrapEmpresasElEconomista(arTr):
 page = requests.get("https://ranking-empresas.eleconomista.es/empresas-VALENCIA.html")
 soup = BeautifulSoup(page.content, 'html.parser')
 
-arTr = soup.find_all('tr',{"class":'tr_hover_even'})
+#iCurrentPage = firstPage
+iFirstPage = int(soup.find_all('li',{"class":'current'})[0].findNext('span').contents[0])
+iLastPage = 0
+if soup.find_all('li',{"class":'arrow'})[1]:
+    iLastPage = int(soup.find_all('li',{"class":'arrow'})[1].previousSibling.find(text=True, recursive=False))
+iCurrentPage = iFirstPage
+
+
+
+exit()
+
+if soup.find_all('tr',{"class":'tr_hover_even'}):
+    arTr = soup.find_all('tr',{"class":'tr_hover_even'})
+
+    results=ScrapEmpresasElEconomista(arTr)
+else:
+    exit()
 
 #iSecondsWait = randint(0, 10)
 #time.sleep(iSecondsWait)
-print(soup)
-print("ddd")
-results=ScrapEmpresasElEconomista(arTr)
-print(results)
+
+
+#print(results)
