@@ -2,7 +2,7 @@
 
 ## Download Counter Strike 1.6
   
-  Link descarga juego 
+  Link 
   > https://www.cybersports.lt/
 
 ## Docker Github
