@@ -11,7 +11,7 @@
   
   ### Parameters
     
-    
+
      | Parameter  | Decription | Default Value |
      | --- | --- |
      | SERVER_NAME | The server name | Counter-Strike 1.6 Server |
