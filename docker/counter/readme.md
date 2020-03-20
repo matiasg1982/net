@@ -11,25 +11,21 @@
   
   ### Parameters
   
+| Command | Description |
+| --- | --- |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |
 
 | Parameter  | Decription | Default Value |
-
 | --- | --- |
-
 | SERVER_NAME | The server name | Counter-Strike 1.6 Server |
-
 | START_MONEY | The initial money | 800 |
-
 | BUY_TIME | The allowed time to buy items in each round (minutes) | 0.25 |
-
 | FRIENDLY_FIRE | Enable or disable the friendly fire. (off: 0, on: 1) | 1 |
-
 | START_MAP | The initial map | de_dust2 |
-
 | MAXPLAYERS | The maximum number of players | 32 |
-
 | ADMIN_STEAM | TBD - amx mod related | TBD |
-  
+
   ### Maps
   
      cs_assault
