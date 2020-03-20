@@ -11,13 +11,8 @@
   
   ### Parameters
   
-| Command | Description |
-| --- | --- |
-| git status | List all new or modified files |
-| git diff | Show file differences that haven't been staged |
-
 | Parameter  | Decription | Default Value |
-| --- | --- |
+| --- | --- | --- |
 | SERVER_NAME | The server name | Counter-Strike 1.6 Server |
 | START_MONEY | The initial money | 800 |
 | BUY_TIME | The allowed time to buy items in each round (minutes) | 0.25 |
