@@ -21,6 +21,19 @@
     | MAXPLAYERS | The maximum number of players | 32 | 
     | ADMIN_STEAM | TBD - amx mod related | TBD |
   
+  ### Maps
+  
+     cs_assault
+     de_dust2
+     de_inferno
+     de_nuke
+     de_train
+     de_dust2_2x2
+     fy_pool_day
+     fy_snow
+     awp_india
+     aim_map
+  
   ### Command 
   
   ```
