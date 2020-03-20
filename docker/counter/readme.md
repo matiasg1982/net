@@ -2,15 +2,15 @@
 
 ## Download Counter Strike 1.6
   
-  Link descarga juego: 
+  Link descarga juego 
   > https://www.cybersports.lt/
 
 ## Docker Github
 > https://github.com/JimTouz/counter-strike-docker
 
-## Docker command:
+## Docker command
   
-  ### Parameters:
+  ### Parameters
     
     | Parameter  | Decription | Default Value |
     | ------------- | ------------- |
